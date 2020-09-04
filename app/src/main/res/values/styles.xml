@@ -1,0 +1,69 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+
+        <item name="colorPrimary">#202020</item>
+        <item name="colorPrimaryDark">#2B2B2B</item>
+        <item name="colorAccent">#0C0C0C</item>
+    </style>
+
+    <style name="Menu" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">#131313</item>
+        <item name="colorPrimaryDark">#1C1C1C</item>
+        <item name="colorAccent">#292929</item>
+    </style>
+
+    <style name="Splash" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">#151515</item>
+        <item name="colorPrimaryDark">#222222</item>
+        <item name="colorAccent">#323232</item>
+    </style>
+
+    <style name="Update" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/Orange</item>
+        <item name="colorPrimaryDark">@color/Orange</item>
+        <item name="colorAccent">@color/Text_idle</item>
+    </style>
+
+    <!-- coloring -->
+    <color name="ColorMain">#E3EDF7</color>
+    <color name="ColorWhite">#ffffff</color>
+    <color name="ColorSecondary">#2D334A</color>
+    <color name="ColorBackground">#f9f9f9</color>
+    <color name="ColorDanger">#dc3545</color>
+    <color name="Green">#0C9463</color>
+    <color name="Semiblack">#2D334A</color>
+    <color name="White">#ffffff</color>
+    <color name="WhiteBlue">#E3EDF7</color>
+    <color name="Text_idle">#EDEDED</color>
+    <color name="Text_connect">#1DF833</color>
+    <color name="Text_stop">#F8861D</color>
+    <color name="Orange">#FF9914</color>
+
+    <style name="IconButton">
+        <item name="android:background">#ffffff</item>
+    </style>
+
+    <style name="VpnStatsLabel">
+        <item name="android:textColor">@color/ColorSecondary</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="VpnStatsValue">
+        <item name="android:textColor">@color/ColorMain</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="ProposalFilterButton">
+        <item name="android:textColor">@color/ColorMain</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:foregroundGravity">fill</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+</resources>

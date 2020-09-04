@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: network.mysterium:mobile-node:0.22.1@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6acd6eb454d55f05a4adbf3fd89d089c/jetified-mobile-node-0.22.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6acd6eb454d55f05a4adbf3fd89d089c/jetified-mobile-node-0.22.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6acd6eb454d55f05a4adbf3fd89d089c/jetified-mobile-node-0.22.1/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

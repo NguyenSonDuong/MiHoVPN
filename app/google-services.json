@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "144237314185",
+    "firebase_url": "https://atheia-vpn-best-secur.firebaseio.com",
+    "project_id": "atheia-vpn-best-secur",
+    "storage_bucket": "atheia-vpn-best-secur.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:144237314185:android:8e388f201f57b5903f0658",
+        "android_client_info": {
+          "package_name": "com.minhhoang.vpn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "144237314185-q68qvlj5a74092ntsgfjbteurvpdjv0c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAK2UwHOwMlJlwDAVialMQbSwkQ7Vh3jHc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "144237314185-q68qvlj5a74092ntsgfjbteurvpdjv0c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

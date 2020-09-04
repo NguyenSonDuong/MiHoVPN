@@ -1,0 +1,486 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0E0E0E">
+
+    <!--bacground-->
+
+
+    <!-- menu [ rela1 ] -->
+    <RelativeLayout
+        android:id="@+id/rela1"
+        android:layout_width="match_parent"
+        android:background="#232323"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/menu"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:src="@drawable/but_menu"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"/>
+
+        <!-- App name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="#FFF"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-black"
+            android:text="MiHo VPN Free"/>
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_below="@+id/rela1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_centerVertical="true">
+
+        <RelativeLayout
+            android:id="@+id/relin"
+            android:layout_below="@+id/rela1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/relmain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true">
+
+                <!-- data section [ rela2 ] -->
+                <RelativeLayout
+                    android:id="@+id/rela2"
+                    android:layout_width="340dp"
+                    android:layout_height="140dp"
+                    android:background="@drawable/holderstat"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-5dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="140dp"
+                        android:layout_centerHorizontal="true">
+
+                        <!-- receive section -->
+                        <RelativeLayout
+                            android:id="@+id/left"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="2dp">
+
+                            <!--- received section -->
+
+                            <RelativeLayout
+                                android:id="@+id/reladata"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <ImageView
+                                        android:layout_width="120dp"
+                                        android:layout_height="120dp"
+                                        android:padding="10dp"
+                                        android:src="@drawable/receive"/>
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="68dp"
+                                    android:layout_height="68dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerVertical="true">
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_alignParentBottom="true"
+                                        android:layout_marginBottom="10dp">
+
+                                        <!-- text total rec -->
+                                        <TextView
+                                            android:id="@+id/stats_bytes_received"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:text="0"
+                                            android:textColor="@color/Text_idle"
+                                            android:textSize="12sp"
+                                            android:textStyle="bold"
+                                            android:fontFamily="@font/monbold" />
+
+                                        <!-- text byte -->
+                                        <TextView
+                                            android:id="@+id/stats_bytes_received_units"
+                                            android:layout_toEndOf="@+id/stats_bytes_received"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/vpn_stats_bytes"
+                                            android:textColor="@color/Text_idle"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textStyle="bold"
+                                            android:fontFamily="@font/monbold"
+                                            android:layout_marginStart="3dp" />
+
+
+                                    </RelativeLayout>
+
+                                </RelativeLayout>
+
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                        <!-- sent section -->
+                        <RelativeLayout
+                            android:id="@+id/right"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="2dp">
+
+                            <!--- sent section -->
+
+                            <RelativeLayout
+                                android:id="@+id/reladata2"
+                                android:layout_alignParentEnd="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true">
+                                    <ImageView
+                                        android:layout_width="120dp"
+                                        android:layout_height="120dp"
+                                        android:padding="15dp"
+                                        android:src="@drawable/sent"/>
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="68dp"
+                                    android:layout_height="68dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerVertical="true">
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_alignParentBottom="true"
+                                        android:layout_marginBottom="10dp">
+
+                                        <!-- text total rec -->
+                                        <TextView
+                                            android:id="@+id/stats_bytes_sent"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:text="0"
+                                            android:textColor="@color/Text_idle"
+                                            android:textSize="12sp"
+                                            android:textStyle="bold"
+                                            android:fontFamily="@font/monbold"/>
+
+                                        <!-- text byte -->
+                                        <TextView
+                                            android:id="@+id/stats_bytes_sent_units"
+                                            android:layout_toEndOf="@+id/stats_bytes_sent"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/vpn_stats_bytes"
+                                            android:textColor="@color/Text_idle"
+                                            android:textSize="12sp"
+                                            android:textStyle="bold"
+                                            android:fontFamily="@font/monbold"
+                                            android:layout_marginStart="3dp" />
+                                    </RelativeLayout>
+
+
+                                </RelativeLayout>
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                        <!-- time section -->
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:background="@drawable/time"/>
+
+                            <!-- text time -->
+                            <TextView
+                                android:id="@+id/stats_duration"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="00:00:00"
+                                android:fontFamily="@font/monlight"
+                                android:textStyle="bold"
+                                android:textSize="14sp"
+                                android:textColor="@color/Text_idle"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="45dp"/>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <!-- status section [ rela3 ] -->
+                <RelativeLayout
+                    android:id="@+id/rela3"
+                    android:layout_below="@+id/rela2"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/holderipidle"
+                    android:layout_marginTop="-20dp">
+
+                    <RelativeLayout
+                        android:id="@+id/relflag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true">
+
+                        <!-- current flag -->
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:id="@+id/status_country"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/ic_earth_24dp"
+                            app:riv_corner_radius="34dp"
+                            android:layout_centerVertical="true"/>
+                    </RelativeLayout>
+
+                    <!-- status text -->
+                    <TextView
+                        android:id="@+id/vpn_status_ip"
+                        android:layout_below="@+id/relflag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/monbold"
+                        android:text="@string/vpn_ip_updating_label"
+                        android:textColor="@color/Text_idle"
+                        android:textSize="14sp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="4dp"/>
+
+                    <!-- Connecting text -->
+                    <TextView
+                        android:id="@+id/status_label"
+                        android:layout_below="@+id/vpn_status_ip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/status_loading"
+                        android:textColor="@color/Text_idle"
+                        android:fontFamily="@font/monlight"
+                        android:textSize="10sp"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+
+                <!-- select section [ rela5 ] -->
+                <RelativeLayout
+                    android:id="@+id/rela5"
+                    android:layout_below="@+id/rela3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-5dp">
+
+                    <TextView
+                        android:id="@+id/location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Location:"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/monlight"
+                        android:textColor="@color/Text_idle"
+                        android:textSize="10sp"/>
+
+                    <RelativeLayout
+                        android:id="@+id/vpn_proposal_picker_layout"
+                        android:layout_below="@id/location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_centerHorizontal="true">
+
+                        <RelativeLayout
+                            android:id="@+id/vpn_select_proposal_layout"
+                            android:layout_width="184dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/serverselect"
+                            android:clickable="true">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true">
+
+                                <RelativeLayout
+                                    android:id="@+id/sec1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true">
+
+                                    <!-- select flag -->
+                                    <com.makeramen.roundedimageview.RoundedImageView
+                                        android:id="@+id/vpn_selected_proposal_country_icon"
+                                        android:layout_width="24dp"
+                                        android:layout_height="24dp"
+                                        android:src="@drawable/ic_earth_24dp"
+                                        app:riv_corner_radius="34dp"
+                                        android:layout_marginEnd="5dp"/>
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:id="@+id/sec2"
+                                    android:layout_toRightOf="@+id/sec1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true">
+
+                                    <!-- text select -->
+                                    <TextView
+                                        android:id="@+id/vpn_selected_proposal_country_label"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/vpn_select_proposal"
+                                        android:textColor="@color/Text_idle"
+                                        android:fontFamily="@font/monlight"
+                                        android:textStyle="bold"
+                                        android:textSize="12sp"
+                                        android:layout_centerHorizontal="true" />
+
+                                    <!-- node number -->
+                                    <TextView
+                                        android:id="@+id/vpn_selected_proposal_provider_label"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:ellipsize="end"
+                                        android:maxLines="1"
+                                        android:paddingLeft="10dp"
+                                        android:paddingRight="10dp"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                        android:textColor="@color/ColorSecondary"
+                                        android:visibility="gone"/>
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:id="@+id/vpn_proposal_picker_favorite_layout"
+                                    android:layout_toRightOf="@+id/sec2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:clickable="true">
+
+                                    <!-- favorit -->
+                                    <ImageView
+                                        android:id="@+id/vpn_proposal_picker_favorite_image"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginEnd="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:src="@drawable/ic_star_border_black_24dp"
+                                        android:visibility="gone"/>
+                                </RelativeLayout>
+
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <!-- connect button section [ rela6 ] -->
+                <RelativeLayout
+                    android:id="@+id/rela6"
+                    android:layout_below="@+id/rela5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true">
+
+                    <!-- connect button -->
+                    <Button
+                        android:id="@+id/vpn_connection_button"
+                        android:layout_width="240dp"
+                        android:layout_height="50dp"
+                        android:enabled="false"
+                        android:text="@string/connect_button_loading"
+                        android:textColor="@color/Green"
+                        app:backgroundTint="@color/White"
+                        app:cornerRadius="20dp"
+                        android:visibility="gone"/>
+
+                    <ImageButton
+                        android:id="@+id/clickedbutton"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/but_start" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/frame"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rela6"
+                    android:visibility="gone">
+
+                    <FrameLayout
+                        android:id="@+id/id_native_ad1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <!--configure (dont change)-->
+    <RelativeLayout
+        android:id="@+id/vpn_account_balance_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/vpn_account_balance_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+</RelativeLayout>
